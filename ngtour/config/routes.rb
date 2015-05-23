@@ -29,7 +29,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v01 do
-      get 'users/all'
+      resources :users
     end
   end
 

@@ -1,8 +1,15 @@
 class Api::V01::UsersController < ApplicationController
-  def all
+  def index
     @users = User.all
     respond_to do |format|
       format.json { render json: @users }
+    end
+  end
+
+  def create
+    p params
+    respond_to do |format|
+      format.json {render json: []}
     end
   end
 end
