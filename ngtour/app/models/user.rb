@@ -8,6 +8,12 @@ class User
   field :email, type: String
   field :created_at, type: Time, default: Time.now
 
+  has_many :places
+
+  validates :username, presence: true, uniqueness: true
+
+  validates :email, presence: true
+
   def password=(password_value)
       self.password = Bcrypt::create_password password_value
   end
