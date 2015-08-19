@@ -5,7 +5,7 @@ require "sinatra/reloader"
 class App < Sinatra::Base
   register Sinatra::Reloader
 
-  get '/' do
-    "------------------"
+  get '/users/:id' do
+    "sfdsafdsafs"
   end
 end
