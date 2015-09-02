@@ -2,7 +2,7 @@ require "sinatra/base";
 
 module Api
   class Users < Sinatra::Base
-    get '/api/users' do
+    get '/api/users' do #modul
       "Users"
     end
 
@@ -12,8 +12,7 @@ module Api
     put '/api/users/:id' do
     end
 
-    delete '/api/users/:id' do
-    end
+
 
     post 'api/users' do
     end
