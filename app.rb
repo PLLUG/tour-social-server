@@ -1,20 +1,11 @@
 require "sinatra/base"
 require "sinatra/reloader"
 
-class User
-  attr_reader :name
-
-  def initialize(name)
-    @name = name
-  end
-end
-
-
 class App < Sinatra::Base
   register Sinatra::Reloader
 
   get '/users' do
-    "sffsfs"
+    "hello"
   end
 
   post '/users' do
